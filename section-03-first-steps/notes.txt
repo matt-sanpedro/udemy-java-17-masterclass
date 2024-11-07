@@ -15,4 +15,5 @@ declaring variables:
 	- in Java programming, this is NOT allowed and will throw an error
 	- this statement includes the data type (ie. int)
 operators: Java operators perform an operation on a variable or value
+case sensitive: Java code is case sensitive and variables will always be exactly as declared
 

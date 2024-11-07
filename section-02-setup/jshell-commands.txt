@@ -1,0 +1,6 @@
+// lists the libraries of code in java environment
+/list -all
+
+// lists the libraries that run at start up
+/list -start
+

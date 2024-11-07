@@ -1,0 +1,18 @@
+// VARIABLES //
+
+keyword: any one of a number of reserved words, that have a predefined meaning in the Java language
+java syntax: 
+	- code is case-sensitive
+	- int is a keyword in Java
+variable: way to store information in computer
+data types: keywords in Java
+declaration statement: 
+	- define a variable by indicating the data type, and the name
+	- optionally set the variable to a specific value
+expression: a coding construct that evaluates to a single value
+declaring variables:
+	- declaring a variable again is effectively re-declaring a variable
+	- in Java programming, this is NOT allowed and will throw an error
+	- this statement includes the data type (ie. int)
+operators: Java operators perform an operation on a variable or value
+

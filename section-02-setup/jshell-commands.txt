@@ -4,3 +4,5 @@
 // lists the libraries that run at start up
 /list -start
 
+// lists the declared variables
+/var

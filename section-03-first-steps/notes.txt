@@ -15,5 +15,30 @@ declaring variables:
 	- in Java programming, this is NOT allowed and will throw an error
 	- this statement includes the data type (ie. int)
 operators: Java operators perform an operation on a variable or value
-case sensitive: Java code is case sensitive and variables will always be exactly as declared
+case sensitive: 
+	- Java code is case sensitive and variables will always be exactly as declared
+	- keywords need to be lowercase
+
+// PRIMITIVE TYPES //
+
+// get the valid range for int, -2147483648 to 2147483648
+// Integer is a wrapper class
+jshell> int myMinIntValue = Integer.MIN_VALUE;
+myMinIntValue ==> -2147483648
+jshell> int myMaxIntValue = Integer.MAX_VALUE;
+myMaxIntValue ==> 2147483647
+
+// java statement System.out.print will print different data types together
+// integer variables get converted to String
+jshell> System.out.print("Integer minimum value = " + myMinIntValue);
+Integer minimum value = -2147483648
+
+// print statement with range
+jshell> System.out.print("Integer value range (" + myMinIntValue + " to " + myMaxIntValue + ")" );
+Integer value range (-2147483648 to 2147483647)
+
+// CLASSES //
+class: 
+	- building block for object-oriented programming, enables building of custom data types
+	- Java uses concept of wrapper class for all eight of its primitive data types
 

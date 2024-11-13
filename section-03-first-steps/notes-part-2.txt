@@ -18,9 +18,24 @@ DATA TYPE	WIDTH		MIN VALUE		MAX VALUE
 byte 		8 		-128 			127
 short		16 		-32768 			32767
 int		32		-2147483648		2147483647
+long		64		-9223372036854775808 	9223372036854775807
 
 // LONG DATA TYPE
 	- long myLongValue = 100;
 	- however number 100 by default is an int (Java will default literal whole numbers as int data type)
 	- in Java, certain numeric literals have suffix appended to value, forces to be different data type
 	- long is one of these types and suffix is an "L", also is NOT case sensitive
+	- example implementation: long myLongValue = 100L;
+	- can check width of data type: System.out.print(Long.SIZE)
+
+// L SUFFIX
+	- a numeric literal that exceeds Integer.MAX_VALUE must use the "L" suffix
+	- sample code snippet:
+jshell> long bigLongLiteralValue = 2_147_483_647;
+bigLongLiteralValue ==> 2147483647
+
+jshell> long bigLongLiteralValue = 2_147_483_647_234;
+|  Error:
+|  integer number too large
+|  long bigLongLiteralValue = 2_147_483_647_234;
+|   

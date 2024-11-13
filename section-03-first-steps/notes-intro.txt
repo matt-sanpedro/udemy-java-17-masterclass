@@ -1,0 +1,85 @@
+// VARIABLES //
+
+keyword: any one of a number of reserved words, that have a predefined meaning in the Java language
+java syntax: 
+	- code is case-sensitive
+	- int is a keyword in Java
+variable: way to store information in computer
+data types: keywords in Java
+declaration statement: 
+	- define a variable by indicating the data type, and the name
+	- optionally set the variable to a specific value
+expression: a coding construct that evaluates to a single value
+declaring variables:
+	- declaring a variable again is effectively re-declaring a variable
+	- in Java programming, this is NOT allowed and will throw an error
+	- this statement includes the data type (ie. int)
+operators: Java operators perform an operation on a variable or value
+case sensitive: 
+	- Java code is case sensitive and variables will always be exactly as declared
+	- keywords need to be lowercase
+
+// PRIMITIVE TYPES //
+
+// get the valid range for int, -2147483648 to 2147483648
+// Integer is a wrapper class
+jshell> int myMinIntValue = Integer.MIN_VALUE;
+myMinIntValue ==> -2147483648
+jshell> int myMaxIntValue = Integer.MAX_VALUE;
+myMaxIntValue ==> 2147483647
+
+// java statement System.out.print will print different data types together
+// integer variables get converted to String
+jshell> System.out.print("Integer minimum value = " + myMinIntValue);
+Integer minimum value = -2147483648
+
+// print statement with range
+jshell> System.out.print("Integer value range (" + myMinIntValue + " to " + myMaxIntValue + ")" );
+Integer value range (-2147483648 to 2147483647)
+
+// CLASSES //
+class: 
+	- building block for object-oriented programming, enables building of custom data types
+	- Java uses concept of wrapper class for all eight of its primitive data types
+
+// JAVA PRIMITIVE TYPES DEFINITIONS
+whole number:
+	- byte
+	- short
+	- int
+	- long
+real number (floating point or decimal):
+	- float
+	- double
+single character:
+	- char
+boolean value:
+	- boolean
+
+integer: a whole number, does NOT contain fractional element or decimal
+	- each numeric data type has defined min and max value, cannot assign number outside of range
+	- Integer.MIN_VALUE;
+	- Integer.MAX_VALUE;
+	- if add 1 to max, overflow occurs (system will NOT throw error)
+	- if subtract 1 to min, underflow occurs
+	- however, assigning a value outside of range WILL throw error
+	- integer wraparound event can occur in Java when using expressions that are not simple literal value
+	- for improved readability, can use the underscore 
+		> ie. int myMaxInt = 2_147_483_647;
+		> can NOT use an underscore at start or end of numeric literal
+
+// WRAPPER CLASS
+	- in Java, implemented for all right primitive data types
+	- provides simple operations, as well as some basic information about primitive data type
+
+PRIMITIVE 	WRAPPER CLASS
+---------	-------------
+byte		Byte
+short		Short
+char		Character
+int		Integer
+long		Long
+float		Float
+double		Double
+boolean		Boolean
+

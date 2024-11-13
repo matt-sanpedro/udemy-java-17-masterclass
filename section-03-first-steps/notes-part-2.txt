@@ -1,0 +1,26 @@
+// PRIMITIVE DATA TYPES FOR STORING WHOLE NUMBERS
+
+DATA TYPE 	WRAPPER CLASS 		NOTEWORTHY
+--------- 	------------- 		----------
+byte		Byte			Has the smallest range
+short		Short
+int		Integer			Default data type for whole numbers
+long 		Long			Has the largest range
+
+// UNDERFLOW/OVERFLOW
+	- both byte and short have same overflow and underflow issues as the int data type has, but with own range of numbers
+
+// SIZE OF PROMITIVE DATA TYPES AND WIDTH
+- size or width is the amount of space taht determines (or limits) range of values
+
+DATA TYPE	WIDTH		MIN VALUE		MAX VALUE
+--------- 	-----		---------		---------
+byte 		8 		-128 			127
+short		16 		-32768 			32767
+int		32		-2147483648		2147483647
+
+// LONG DATA TYPE
+	- long myLongValue = 100;
+	- however number 100 by default is an int (Java will default literal whole numbers as int data type)
+	- in Java, certain numeric literals have suffix appended to value, forces to be different data type
+	- long is one of these types and suffix is an "L", also is NOT case sensitive

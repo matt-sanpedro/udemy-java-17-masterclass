@@ -42,3 +42,44 @@ class:
 	- building block for object-oriented programming, enables building of custom data types
 	- Java uses concept of wrapper class for all eight of its primitive data types
 
+// JAVA PRIMITIVE TYPES DEFINITIONS
+whole number:
+	- byte
+	- short
+	- int
+	- long
+real number (floating point or decimal):
+	- float
+	- double
+single character:
+	- char
+boolean value:
+	- boolean
+
+integer: a whole number, does NOT contain fractional element or decimal
+	- each numeric data type has defined min and max value, cannot assign number outside of range
+	- Integer.MIN_VALUE;
+	- Integer.MAX_VALUE;
+	- if add 1 to max, overflow occurs (system will NOT throw error)
+	- if subtract 1 to min, underflow occurs
+	- however, assigning a value outside of range WILL throw error
+	- integer wraparound event can occur in Java when using expressions that are not simple literal value
+	- for improved readability, can use the underscore 
+		> ie. int myMaxInt = 2_147_483_647;
+		> can NOT use an underscore at start or end of numeric literal
+
+// WRAPPER CLASS
+	- in Java, implemented for all right primitive data types
+	- provides simple operations, as well as some basic information about primitive data type
+
+PRIMITIVE 	WRAPPER CLASS
+---------	-------------
+byte		Byte
+short		Short
+char		Character
+int		Integer
+long		Long
+float		Float
+double		Double
+boolean		Boolean
+

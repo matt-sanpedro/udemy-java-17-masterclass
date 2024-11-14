@@ -4,8 +4,31 @@
 - Java default type for decimal or real number is: double
 - precision: refers to the format and amount of space occupied by the relevant type
 - double is more precise and can represent smaller and larger decimal values compared to float
+- double data type: suffix is "d" or "D" but since double is default, suffix is optional to use
+- float data type: suffix is "f" or "F" and required if assigning a real number to a variable
+
+- sample code snippet:
+jshell> int myIntValue = 5; float myFloatValue = 5f; double myDoubleValue = 5d;
+myIntValue ==> 5
+myFloatValue ==> 5.0
+myDoubleValue ==> 5.0
 
 DATA TYPE 	WIDTH (BITS) 	MIN VALUE	MAX VALUE
 ---------	------------	---------	---------
 float		32		1.4E-45		3.4028235E38
 double		64		4.9E-324 	1.7976931348623157E308
+
+- below code throws error since Java defaults decimal number to double:
+jshell> float myOtherFloatValue = 5.25;
+|  Error:
+|  incompatible types: possible lossy conversion from double to float
+|  float myOtherFloatValue = 5.25;
+|  
+
+- can use casting to resolve conversion error (not recommended to use float):
+jshell> float myOtherFloatValue = (float) 5.25;
+myOtherFloatValue ==> 5.25
+
+- most programmers will use suffix for float instead of casting
+jshell> float myOtherFloatValue = 5.25f;
+myOtherFloatValue ==> 5.25

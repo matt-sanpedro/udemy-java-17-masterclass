@@ -1,0 +1,43 @@
+// EXPRESSION SYNTAX
+- in Java can place expressions in same line separated by a semi-colon
+- sample code:
+jshell> short myMinShortValue = Short.MIN_VALUE; int myMinIntValue = Integer.MIN_VALUE;
+myMinShortValue ==> -32768
+myMinIntValue ==> -2147483648
+
+- can also cast multiple variables on same line
+- note that "byte" in sample code only declared once:
+jshell> byte myMinByteValue = Byte.MIN_VALUE, myMaxByteValue = Byte.MAX_VALUE;
+myMinByteValue ==> -128
+myMaxByteValue ==> 127
+
+- can also cast different data types on same line, but there will be two statements
+jshell> short firstShort = 1; int firstInteger = 2;
+firstShort ==> 1
+firstInteger ==> 2
+
+// RULES FOR DECLARING MULTIPLE VARIABLES IN ONE STATEMENT
+	- cannot declare variables with different data types in single statement
+	- if multiple variables are declared with same data type in single statement, data type specified once
+
+// ASSIGNING EXPRESSIONNS TO VARIABLES WITH UNMATCHED DATA TYPES
+- Java compiler does NOT attempt to evaluate the value in a variable, does not know if value fits, throws error
+- error thrown because Java defaults myMinByteValue as an int data type
+jshell> byte myNewByteValue = (myMinByteValue / 2);
+|  Error:
+|  incompatible types: possible lossy conversion from int to byte
+|  byte myNewByteValue = (myMinByteValue / 2);
+|                         ^----------------^
+
+- if calculation uses literal values, Java can compute end result at compile time, and whether it fits into variable
+jshell> byte myNewByteValue = (-128 / 2);
+myNewByteValue ==> -64
+
+// CASTING
+casting: to treat or convert a number, from one type to another
+- sample code:
+jshell> byte myNewByteValue = (byte) (myMinByteValue / 2);
+myNewByteValue ==> -64
+
+jshell> short myNewShortValue = (short) (myMinShortValue / 2);
+myNewShortValue ==> -16384

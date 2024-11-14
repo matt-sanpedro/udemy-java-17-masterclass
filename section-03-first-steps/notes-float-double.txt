@@ -1,0 +1,11 @@
+// FLOATING-POINT NUMBERS
+- numbers with fractional parts, expressed with a decimal point
+- floating point numbers are also real numbers
+- Java default type for decimal or real number is: double
+- precision: refers to the format and amount of space occupied by the relevant type
+- double is more precise and can represent smaller and larger decimal values compared to float
+
+DATA TYPE 	WIDTH (BITS) 	MIN VALUE	MAX VALUE
+---------	------------	---------	---------
+float		32		1.4E-45		3.4028235E38
+double		64		4.9E-324 	1.7976931348623157E308

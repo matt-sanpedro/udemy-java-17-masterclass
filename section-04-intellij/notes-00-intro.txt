@@ -1,0 +1,12 @@
+// INTELLIJ BASICS
+- in Java, there is a camel case practice of captilizing first words in a name for readability
+- upper camel case, aka Pascal case, capitalizes first word as well
+
+// NAMING CONVENTION
+IDENTIFIER 		USAGE			RECOMMENDED		EXAMPLE
+----------		-----			-----------		-------
+project name		intellij field		upper camel case	FirstJavaProject
+class name		Java element		upper camel case	NewClass
+method name		Java element            lower camel case	getData
+variable name		Java element            lower camel case        firstVariable
+

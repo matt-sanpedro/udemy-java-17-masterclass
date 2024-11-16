@@ -1,0 +1,43 @@
+// OPERATORS
+- operators: special symbols that perform specific operations on one, two, or three operands then return a result
+- operand: term used to describe any object that is manipulated by an operator
+- in code below, plus is the operator, 15 and 12 are the operands
+int myVar = 15 + 12;
+- expression: formed by combining variables, literals, method return values, and operators
+- comment: ignored by computer, added to program to help describe something
+	> in Java, example: // this is a comment and everything to right of double forward-slash is ignored
+- example of using inline comment:
+jshell> int result = 1 + 2;   // 1 + 2 = 3
+result ==> 3
+
+- example of variable assignment with integer numbers
+jshell> int result = 1 + 2;   // 1 + 2 = 3
+result ==> 3
+jshell> int previousResult = result;
+previousResult ==> 3
+jshell> result = result - 1;   // 3 - 1 = 2
+result ==> 2
+jshell> System.out.print("previousResult = " + previousResult);
+previousResult = 3
+
+- since char have integer values stored as 2 byte numbers in memory, these are added:
+jshell> char firstChar = 'A', secondChar = 'B';
+firstChar ==> 'A'
+secondChar ==> 'B'
+jshell> System.out.print(firstChar + secondChar);
+131
+
+- the result transforms both char into string then concatenates it to empty string
+jshell> System.out.print("" + firstChar + secondChar);
+AB
+
+- mathematical operators with integers works as expected:
+jshell> result = 2;
+result ==> 2
+jshell> result = result * 10;   // 2 * 10 = 20
+result ==> 20
+jshell> result = result / 4;   // 20 / 4 = 5
+result ==> 5
+
+- remainder operator (%): returns the remaining value from a division operation, if no remaining value, result is 0
+	> goes by several names including modulus, modulo, or just plain mod

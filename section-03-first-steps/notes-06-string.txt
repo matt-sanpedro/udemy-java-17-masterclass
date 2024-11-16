@@ -1,0 +1,56 @@
+// STRING
+- string: a class that contains a sequence of characters
+- example code:
+jshell> String myString = "This is a string";
+myString ==> "This is a string"
+
+- output a string literal and a string variable code:
+jshell> System.out.print("myString is equal to " + myString);
+myString is equal to This is a string
+
+- can also use Unicode in a string:
+jshell> myString = "I wish I had \u00241,000,000.00";
+myString ==> "I wish I had $1,000,000.00"
+
+// EXECUTING MULTIPLE LINES IN JShell
+- initiated with curly opening brace
+- sample code (does NOT store in /var):
+jshell> {
+   ...>     double myDouble = 45d;
+   ...>     double myTotal = myDouble + 46.45 + 8.52;
+   ...> }
+
+jshell> /var
+|    String myString = "I wish I had $1,000,000.00"
+
+- two ways to execute multiple lines in JShell:
+	1. statements on single line
+	2. enclose statements in a set of curly braces {}
+
+// DATA TYPE COMPATIBILITY
+- cannot assign string to an int number:
+jshell> int myInt = "10";
+|  Error:
+|  incompatible types: java.lang.String cannot be converted to int
+|  int myInt = "10";
+|              ^--^
+
+- performing addition on a string and int yields a concatenated string (the int is converted to string):
+- Java creates a new string in the process
+jshell> String lastString = "10"; int myInt = 50;
+lastString ==> "10"
+myInt ==> 50
+
+jshell> lastString = lastString + myInt;
+lastString ==> "1050"
+
+- double numbers will also be treated as text and concatenated into the string:
+jshell> double doubleNumber = 120.47; lastString = lastString + doubleNumber;
+doubleNumber ==> 120.47
+lastString ==> "1050120.47"
+
+// IMMUTABILITY
+- string class is immutable or cannot change after it is created
+- StringBuilder class is mutable, can be changed, but does not share the String's special features
+	> cannot assign it a String literal or use plus operator on it
+

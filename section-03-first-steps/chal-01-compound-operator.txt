@@ -1,0 +1,29 @@
+// COMPOUND ASSIGNMENT OPERATOR CHALLENGE
+1. initialize int variable, named result, to value of 10
+2. use compound operator, with minus sign, to subtract a number from result, use value of your choice
+3. print out the result
+
+// IMPLEMENTATION JSHELL
+jshell> {
+   ...>     int result = 10;
+   ...>     result-=5;
+   ...>     System.out.print("result = " + result);
+   ...> }
+result = 5
+
+// WHEN RESULT IS INT, GIVE US DIFFERENT VALUE
+jshell> {
+   ...>     int result = 10;
+   ...>     result -= 5.5;
+   ...>     System.out.print("result = " + result);
+   ...> }
+result = 4
+
+- fixing the problem by initilizing variable as double
+- an implicit cast is done when using this operator, no error occurs but result is unexpected
+jshell> {
+   ...>     double result = 10;
+   ...>     result -= 5.5;
+   ...>     System.out.print("result = " + result);
+   ...> }
+result = 4.5

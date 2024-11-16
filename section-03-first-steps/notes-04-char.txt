@@ -1,0 +1,54 @@
+// CHAR
+- char is different from a string
+- literal string from previous notes were use in print statement:
+	ex: jshell> System.out.print("Hello World");
+- char example on jshell:
+jshell> char myChar = 'M';
+myChar ==> 'M'
+
+// CHAR VS STRING DIFFERENCES
+CHAR					STRING
+----					------
+holds one, and only one, char		can hold multiple characters
+literal enclosed in single quotes	literal enclosed in double quotes
+
+// REASONS FOR CHAR
+- can store last key pressed by a user in a game
+- loop programmatically through the letters in an alphabet
+- can be used to store arrays for looping
+
+// CHAR DATA TYPE
+- occupies two bytes of memory, or 16 bits, and thus has a width of 16
+- not single byte, stored as 2 byte number, similar to the short
+- unicode: an international encoding standard for use with different languages and scripts
+	> each letter, digit, or symbol is assigned a unique numeric value that applies across different platforms/programs
+- web resource for unicode: https://symbl.cc/en/unicode-table
+- can extract the unicode from web resource, sample code:
+jshell> char myChar = '\u0044';
+myChar ==> 'D'
+
+- can assign a numeric literal to a char variable (ex: from html integer of 'D')
+jshell> char myDecimalCode = 68;
+myDecimalCode ==> 'D'
+
+// ASSIGNING VALUES TO A CHAR VARIABLE
+ASSIGNMENT TYPE				EXAMPLE CODE
+---------------				------------
+a literal character			char myChar = 'D';
+a Unicode value 			char myChar = '\u0044';
+an integer value			char myChar = 68;
+
+// SAMPLE CODE ON QUESTION MARK CHAR
+jshell> char mySimpleChar = '?';
+mySimpleChar ==> '?'
+
+jshell> char myUnicodeChar = '\u003f';
+myUnicodeChar ==> '?'
+
+jshell> char myDecimalChar = 63;
+myDecimalChar ==> '?'
+
+jshell> System.out.print("My values are " + mySimpleChar + myUnicodeChar + myDecimalChar);
+My values are ???
+
+

@@ -1,0 +1,19 @@
+// BOOLEAN PRIMITIVE TYPE
+- in general a boolean is a value that stores two opposite choices: true or false, yes or no, one or zero
+- in Java terms, can be set to two values only: true or false
+- wrapper for boolean is Boolean with capital B
+- example implementation:
+jshell> boolean myTrueBooleanValue = true;
+myTrueBooleanValue ==> true
+
+jshell> boolean myFalseBooleanValue = false;
+myFalseBooleanValue ==> false
+
+// PREFIX: 'is'
+- often the word is can be used as prefix for a boolean value
+- creates a name that seems to ask question, makes reading the code more intuitive:
+jshell> boolean isOverTwentyOne = true;
+isOverTwentyOne ==> true
+- other common boolean variable names:
+	> isEligibleForDiscount, hasValidLicense, isMarried, hasChildren
+

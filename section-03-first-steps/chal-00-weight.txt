@@ -1,0 +1,15 @@
+// CHALLENGE
+STEPS:
+1. Create a variable with the appropriate type, to store the number of pounds
+2. Calculate kilograms, with variable above, and store the result in a 2nd appropriately typed variable
+3. Print the result
+
+jshell> double myWeightPounds = 150d;
+myWeightPounds ==> 150.0
+
+jshell> double myWeightKilo = myWeightPounds * 0.45359237d;
+myWeightKilo ==> 68.0388555
+
+jshell> System.out.print(myWeightPounds + " pounds converted is: " + myWeightKilo + " kilograms");
+150.0 pounds converted is: 68.0388555 kilograms
+

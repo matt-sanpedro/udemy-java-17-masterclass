@@ -32,3 +32,15 @@ myOtherFloatValue ==> 5.25
 - most programmers will use suffix for float instead of casting
 jshell> float myOtherFloatValue = 5.25f;
 myOtherFloatValue ==> 5.25
+
+// DOUBLE IS A BETTER CHOICE
+- faster to process
+- computers at chip level have functionality to deal with double numbers
+- Java libraries, particularly math functions, written to process double numbers
+- creators selected double because it is more precise and can handle larger range of numbers
+
+// FLOATING POINT NUMBER PRECISION TIPS
+- when precise calculations are required, float and double numbers should NOT be used
+- due to limitation on how floating point numbers are stored, this is NOT a Java problem
+- advised to use Java class BigDecimal for precise calculations
+

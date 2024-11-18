@@ -1,3 +1,6 @@
 // LOGICAL "AND" OPERATOR AND THE LOGICAL "OR" OPERATOR
 - both operators have two flavours in Java
 - && is the Logical and, which operates on boolean operands, checking 
+- || is the Logical or, operates on boolean operands to check if given condition is true or false
+- |  is the bitwise operator, also working at the bit level (will likely not be used as much)
+

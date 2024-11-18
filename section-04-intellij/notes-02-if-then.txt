@@ -1,0 +1,15 @@
+// IF-THEN STATEMENTS IN JAVA
+- conditional logic: program executes certain section of code, only if the particular test evaluates to TRUE
+	> uses specific statements in Java to allow to check a condition
+- equality operator (==): tests if two operands are considered equal, and returns a boolean value
+- code block: allows more than one statement to be executed, or a block
+- example code formatting:
+if (expression) {
+	// put one or more statements here
+}
+- bottom-line, ALWAYS use a code block for if statements
+
+// DO NOT WITH IF-THEN
+- leave a semi-colon at the end of an if statement line
+	> this will end the expression and the condition will not evaluate
+- forget to use curly braces to wrap the if condition code block

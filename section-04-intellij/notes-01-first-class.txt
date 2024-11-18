@@ -1,0 +1,26 @@
+// JAVA FIRST CLASS
+public class FirstClass {
+    public static void main(String[] args) {
+        System.out.print("Hello World");
+    }
+}
+
+// DISSECTING THE JAVA CLASS
+- public: Java keyword called an access modifier
+- access modifier: define which parts of code can access a particular element
+- class: key word used to define a class, class name will be text following the "class" keyword
+- left and right curly braces define the class code block, or class body
+- a method was defined in the first class example above as main
+- method: collection of statements, one or more, that perform an operation
+- main method: Java will run this method when program is executed and is the entry point for ANY Java code
+- static: Java key word used for memory management primarily
+	> can be applied to varialbes, methods, blocks, and nested classes
+	> when static is declared, belongs to class rather than instances of the class
+	> thus, only one instance of the static member exists, regardless of how many objects of the class are created
+- void: Java key word to indicate that the method will not return any information
+- method declaration: first set of left and right parentheses after main
+- code block: location where code is inputted, second set of parentheses
+
+// CREATE NEW JAVA CLASS IN INTELLIJ
+- right click on the "src" folder on left-hand project panel and select "Java Class"
+

@@ -1,0 +1,4 @@
+// NOT OPERATOR
+- ! is the Logical Complement Operator
+- can be used with boolean variable, to test for opposite value
+

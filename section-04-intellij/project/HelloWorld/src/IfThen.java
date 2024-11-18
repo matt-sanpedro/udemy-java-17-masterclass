@@ -1,5 +1,4 @@
 public class IfThen {
-
     public static void main(String[] args) {
         boolean isAlien = false;
         if (isAlien == false) {
@@ -18,6 +17,9 @@ public class IfThen {
             System.out.println("Greater than second top score and less than 100");
         }
 
-    }
+        if ((topScore > 90) || (secondTopScore <= 90)) {
+            System.out.println("Either or both of the conditions are true");
+        }
 
+    }
 }
